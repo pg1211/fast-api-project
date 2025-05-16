@@ -6,5 +6,5 @@ mons_db = [{"mon_name": "charmander"}, {"mon_name": "bulbasaur"}, {"mon_name": "
 
 
 @app.get("/items/")
-async def read_name(skip: int = 1, limit: int = 10):
+async def read_name(skip: int = 0, limit: int = 10):
     return mons_db[skip : skip + limit]
