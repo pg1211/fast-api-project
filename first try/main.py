@@ -1,7 +1,6 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
 
-
 class Mon(BaseModel):
     name: str
     description: str | None = None
